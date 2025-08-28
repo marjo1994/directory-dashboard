@@ -1,0 +1,17 @@
+@use "../../../styles/index.scss" as *;
+
+.avatarStack {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  &_item {
+    position: relative;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -8px;
+    border: 2px solid #bec0c8;
+    background-color: $white-color;
+  }
+}

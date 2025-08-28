@@ -1,0 +1,37 @@
+@use "../../../styles/index.scss" as *;
+
+.card {
+  border-radius: 12px;
+  background-color: $white-color;
+  padding: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  &_title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  &_date {
+    font-size: 0.8rem;
+    color: $gray-color;
+  }
+  &_icon {
+    margin-right: 0px;
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  &_fileImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+  &_titleSpacing {
+    margin-bottom: 1rem;
+  }
+  &_imgSpacing {
+    margin-bottom: 1.8rem;
+  }
+}

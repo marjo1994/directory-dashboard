@@ -1,0 +1,22 @@
+@use "../../../styles/index.scss" as *;
+
+.recentFiles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $gray-color;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .header {
+    display: none;
+  }
+}

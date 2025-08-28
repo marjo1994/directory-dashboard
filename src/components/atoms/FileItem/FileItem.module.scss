@@ -1,0 +1,38 @@
+@use "../../../styles/index.scss" as *;
+
+.fileItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  background: $white-color;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+  color: $gray-color;
+}
+
+.fileItem:hover {
+  background: $gray-2-color;
+}
+
+.nameSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: $primary-color;
+}
+
+.iconWrapper {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 5px;
+  background-color: $orange-color;
+  margin-right: 0.5rem;
+}
+
+.moreBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

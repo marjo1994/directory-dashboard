@@ -1,0 +1,49 @@
+@use "./variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  color: $primary-color;
+  background-color: $white-color;
+  line-height: $line-height-base;
+  min-height: 100vh;
+  /*box-sizing: border-box;
+  min-height: 100vh;
+  overflow: hidden;*/
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.homepage {
+  .layout {
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .homepage {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+
+    .layout > :first-child,
+    .layout > :last-child {
+      display: none;
+    }
+  }
+}

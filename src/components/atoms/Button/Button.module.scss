@@ -1,0 +1,28 @@
+@use "../../../styles/index.scss" as *;
+
+.btn {
+  display: block;
+  background-color: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: $orange-color;
+  color: $white-color;
+  width: 100%;
+}
+
+.secondary {
+  background-color: $green-color;
+  color: $white-color;
+  width: 100%;
+}
+
+.danger {
+  background-color: $blue-color;
+  color: $white-color;
+  width: 100%;
+}

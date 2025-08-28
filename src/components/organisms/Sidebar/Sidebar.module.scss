@@ -1,0 +1,21 @@
+@use "../../../styles/index.scss" as *;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background-color: $primary-color;
+  color: $gray-color;
+  .nav {
+    margin-top: 4.13rem;
+  }
+  .createNew {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    display: none;
+  }
+}
