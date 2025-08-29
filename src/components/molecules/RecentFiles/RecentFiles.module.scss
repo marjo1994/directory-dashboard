@@ -12,11 +12,8 @@
   font-size: 0.875rem;
   font-weight: 500;
   color: $gray-color;
-  padding: 0.5rem 1rem;
-}
-
-@media (max-width: 991px) {
-  .header {
-    display: none;
+  padding: 0px;
+  @media (min-width: 992px) {
+    padding: 0.5rem 1rem;
   }
 }

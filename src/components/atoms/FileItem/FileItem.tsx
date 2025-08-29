@@ -14,8 +14,8 @@ export const FileItem = ({ name, members, date }: FileItemProps) => {
         <span>{name}</span>
       </div>
 
-      <div>{members} members</div>
-      <div>{date}</div>
+      <div className={styles.members}>{members} members</div>
+      <div className={styles.date}>{date}</div>
       <button className={styles.moreBtn}>
         <img src={threeDotsHorizontal} alt="Three Dots Button" />
       </button>

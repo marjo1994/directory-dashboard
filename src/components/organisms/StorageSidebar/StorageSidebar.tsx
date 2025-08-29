@@ -31,9 +31,7 @@ export const StorageSidebar = () => {
         <div className={styles.contentWrapper}>
           <h2>Storage</h2>
           <StorageCircleBar data={data} total={500} />
-          <div className={styles.spotlightWrapper}>
-            <Spotlight />
-          </div>
+          <Spotlight />
         </div>
       </div>
 
