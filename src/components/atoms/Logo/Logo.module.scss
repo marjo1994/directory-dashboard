@@ -1,7 +1,7 @@
 @use "../../../styles/index.scss" as *;
 
 .logo {
-  width: 60%;
+  width: 74px;
   height: 1.5rem;
   display: block;
   border-radius: 5px;
@@ -11,4 +11,7 @@
     $pink-color 56%,
     $orange-color 100%
   );
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
 }

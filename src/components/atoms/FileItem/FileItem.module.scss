@@ -5,10 +5,15 @@
   grid-template-columns: 2fr 1fr 1fr auto;
   align-items: center;
   background: $white-color;
-  padding: 1% 1%;
+  padding: 0.875rem 0.875rem;
   border-radius: 0.5rem;
   transition: background 0.2s ease;
   color: $gray-color;
+  font-size: 0.875rem;
+  @media (min-width: 1029px) {
+    font-size: 1rem;
+    padding: 1% 1%;
+  }
 }
 
 .fileItem:hover {
@@ -21,10 +26,6 @@
   gap: 0.5rem;
   font-weight: 400;
   color: $primary-color;
-  font-size: 0.9rem;
-  @media (min-width: 1920px) {
-    font-size: 1rem;
-  }
 }
 
 .iconWrapper {

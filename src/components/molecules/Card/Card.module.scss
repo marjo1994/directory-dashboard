@@ -4,15 +4,19 @@
   border-radius: 12px;
   background-color: $white-color;
   padding: 1rem;
-  margin-right: 1rem;
+  //margin-right: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
   &_title {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
     margin-bottom: 0.3rem;
+    @media (min-width: 1029px) {
+      font-size: 1rem;
+    }
   }
   &_date {
-    font-size: 0.8rem;
+    font-size: 0.815rem;
     color: $gray-color;
   }
   &_icon {

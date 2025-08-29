@@ -5,8 +5,11 @@
   background-color: none;
   border: none;
   border-radius: 7px;
-  font-size: 0.9rem;
+  font-size: 0.6285rem;
   cursor: pointer;
+  @media (min-width: 1029px) {
+    font-size: 1rem;
+  }
 }
 
 .primary {

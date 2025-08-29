@@ -7,7 +7,10 @@
   background-color: $primary-color;
   color: $gray-color;
   .nav {
-    margin-top: 4.13rem;
+    margin-top: 3.2rem;
+    @media (min-width: 1029px) {
+      margin-top: 4.13rem;
+    }
   }
   .divider {
     height: 1px;

@@ -10,10 +10,10 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
   color: $gray-color;
   padding: 0px;
-  @media (min-width: 992px) {
+  @media (min-width: 1029px) {
     padding: 0.5rem 1rem;
   }
 }

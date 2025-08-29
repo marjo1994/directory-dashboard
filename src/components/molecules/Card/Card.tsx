@@ -33,7 +33,7 @@ export const Card = ({
           className={`${styles.card_fileImg} ${hasSpacing ? styles.card_imgSpacing : ""}`}
         >
           <img src={image} alt="File img" />
-          <AvatarStack users={users} max={3} />
+          <AvatarStack users={users} max={2} />
         </div>
       )}
 

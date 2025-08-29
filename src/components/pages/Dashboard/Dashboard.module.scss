@@ -19,7 +19,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1.44rem;
     h2 {
       margin-bottom: 0px;
     }
@@ -30,7 +30,7 @@
       float: right;
       cursor: pointer;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 1029px) {
       margin-bottom: 0.5rem;
     }
     @media (min-width: 1920px) {
@@ -41,9 +41,12 @@
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(clamp(12rem, 20%, 18rem), 1fr)
+      minmax(clamp(10rem, 20%, 18rem), 1fr)
     );
-    gap: 1rem;
+    gap: 0.875rem;
+    @media (min-width: 1029px) {
+      gap: 1rem;
+    }
   }
   @media (max-width: 991px) {
     margin-right: 0;

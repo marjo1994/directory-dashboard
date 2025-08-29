@@ -10,10 +10,13 @@
   }
   .plusIcon {
     padding: 0.45rem 0.75rem;
-    font-size: 1rem;
+    font-size: 0.6285rem;
     border-radius: 4px;
     background-color: #ffb233;
     margin-left: auto;
+    @media (min-width: 1029px) {
+      font-size: 1rem;
+    }
   }
   &_panel {
     position: absolute;
