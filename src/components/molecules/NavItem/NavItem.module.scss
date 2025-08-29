@@ -8,14 +8,24 @@
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
-
+.active {
+  .icon {
+    border: 1px solid $white-color;
+  }
+  .label {
+    color: $white-color;
+  }
+}
 .icon {
   display: block;
   border: 1px solid $gray-color;
   width: 1rem;
   height: 1rem;
 }
-
+.activeIcon {
+  position: absolute;
+  left: 0px;
+}
 .label {
   color: $gray-color;
   text-decoration: none;

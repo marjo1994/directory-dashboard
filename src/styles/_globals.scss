@@ -1,18 +1,5 @@
 @use "./variables" as *;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $font-primary;
-  color: $primary-color;
-  background-color: $white-color;
-  line-height: $line-height-base;
-  min-height: 100vh;
-  /*box-sizing: border-box;
-  min-height: 100vh;
-  overflow: hidden;*/
-}
-
 h1,
 h2,
 h3,
@@ -21,29 +8,128 @@ p {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 1920px) {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  color: $primary-color;
+  background-color: $white-color;
+  line-height: $line-height-base;
+  min-height: 100vh;
 }
 
 .homepage {
   .layout {
     display: grid;
     grid-template-columns: 15% 60% 25%;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     min-height: 100vh;
   }
 }
 
-@media (max-width: 640px) {
+/** {
+  outline: 1px solid red !important;
+}*/
+@media (max-width: 991px) {
   .homepage {
     .layout {
       grid-template-columns: 1fr;
     }
-
-    .layout > :first-child,
-    .layout > :last-child {
+    .layout > .sidebarDesktop,
+    .layout > .storageSidebarDesktop {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .storageSidebarDesktop {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .storageSidebarMobile {
+    display: none;
+  }
+}
+
+/*Mobile Header*/
+
+.mobileHeader {
+  display: none;
+  .hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  @media (max-width: 991px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: $primary-color;
+    color: $white-color;
+  }
+}
+
+/*Drawer*/
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1000;
+
+  .backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .panel {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #f5f6f9;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.open {
+    pointer-events: auto;
+    .backdrop {
+      opacity: 1;
+    }
+    .panel {
+      left: 0;
     }
   }
 }

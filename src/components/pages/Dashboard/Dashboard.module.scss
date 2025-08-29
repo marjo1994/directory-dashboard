@@ -6,21 +6,32 @@
   margin-left: 1.3rem;
   padding: 1rem;
   .section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     &:last-child {
       margin-bottom: 0px;
+    }
+    @media (min-width: 1920px) {
+      margin-bottom: 2.5rem;
     }
   }
   .sectionHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    h2 {
+      margin-bottom: 0px;
+    }
     .sectionBtn {
       background: none;
       border: none;
       margin-left: auto;
       float: right;
       cursor: pointer;
+    }
+    @media (min-width: 1920px) {
+      margin-bottom: 1.5rem;
     }
   }
   .threeColumns {
@@ -29,6 +40,10 @@
       auto-fit,
       minmax(clamp(12rem, 20%, 18rem), 1fr)
     );
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+  @media (max-width: 991px) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

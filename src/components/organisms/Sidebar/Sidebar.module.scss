@@ -9,13 +9,14 @@
   .nav {
     margin-top: 4.13rem;
   }
+  .divider {
+    height: 1px;
+    background-color: $gray-4-color;
+  }
   .createNew {
     margin-top: auto;
   }
-}
-
-@media (max-width: 640px) {
-  .sidebar {
-    display: none;
+  @media (max-width: 991px) {
+    height: 100%;
   }
 }

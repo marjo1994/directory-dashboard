@@ -10,12 +10,12 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   color: $gray-color;
   padding: 0.5rem 1rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   .header {
     display: none;
   }

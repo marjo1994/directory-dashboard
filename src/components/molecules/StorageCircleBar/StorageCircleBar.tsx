@@ -25,16 +25,18 @@ export const StorageCircleBar = ({ data, total }: StorageCircleBarProps) => {
         style={{ background: `conic-gradient(${stops})` }}
       >
         <div className={styles.innerCircle}>
-          <span className={styles.percentage}>
-            {Math.round(
-              (data.reduce((acc, i) => acc + i.value, 0) / total) * 100
-            )}
-            %
-          </span>
-          <span>Used</span>
+          <div className={styles.numberCircle}>
+            <span className={styles.percentage}>
+              {Math.round(
+                (data.reduce((acc, i) => acc + i.value, 0) / total) * 100
+              )}
+              %
+            </span>
+            <span>Used</span>
+          </div>
         </div>
       </div>
-      <p>420.2 GB of 500 GB used</p>
+      <p className={styles.labelCircleBar}>420.2 GB of 500 GB used</p>
       <div className={styles.storageList}>
         {data.map((item) => {
           return (
